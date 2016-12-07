@@ -1,4 +1,4 @@
-# onestick shadowsocks四个一版一键脚本
+# onestick一键脚本
 #shadowsocks四合一安装版，仅对默认配置进行了适当修改。包括加密方式改为：chacha20,设置默认时区设置为：东八区-上海
 #本脚本适用环境
 系统支持：CentOS 6+，Debian 7+，Ubuntu 12+
@@ -55,20 +55,31 @@ Enjoy it!
 #启动脚本后面的参数含义，从左至右依次为：启动，停止，重启，查看状态。
 
 Shadowsocks-Python 版：/etc/init.d/shadowsocks-python start | stop | restart | status
-ShadowsocksR 版　　　：/etc/init.d/shadowsocks-r start | stop | restart | status
-Shadowsocks-Go 版　　：/etc/init.d/shadowsocks-go start | stop | restart | status
+
+ShadowsocksR 版：/etc/init.d/shadowsocks-r start | stop | restart | status
+
+Shadowsocks-Go 版：/etc/init.d/shadowsocks-go start | stop | restart | status
+
 Shadowsocks-libev 版：/etc/init.d/shadowsocks-libev start | stop | restart | status
 
 #各版本默认配置文件
+
 Shadowsocks-Python 版：/etc/shadowsocks-python/config.json
-ShadowsocksR 版　　　：/etc/shadowsocks-r/config.json
-Shadowsocks-Go 版　　：/etc/shadowsocks-go/config.json
+
+ShadowsocksR 版：/etc/shadowsocks-r/config.json
+
+Shadowsocks-Go 版：/etc/shadowsocks-go/config.json
+
 Shadowsocks-libev 版：/etc/shadowsocks-libev/config.json
 
 #更多单版本 Shadowsocks 服务端一键安装脚本
+
 ShadowsocksR 版一键安装脚本（CentOS，Debian，Ubuntu）
+
 CentOS 下 Shadowsocks-libev 一键安装脚本
+
 Debian 下 Shadowsocks-libev 一键安装脚本
+
 Shadowsocks-go 一键安装脚本（CentOS，Debian，Ubuntu）
 
 #注意：以上单版本不可与该四合一版本混用。
