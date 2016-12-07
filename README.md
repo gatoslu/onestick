@@ -1,4 +1,5 @@
-# onestick  shadowsocks四合一安装版，仅对默认配置进行了适当修改
+# onestick 
+#shadowsocks四合一安装版，仅对默认配置进行了适当修改
 #原创作者秋水逸冰大神 https://teddysun.com/486.html
 #本脚本适用环境
 系统支持：CentOS 6+，Debian 7+，Ubuntu 12+
