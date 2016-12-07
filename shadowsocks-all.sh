@@ -2,7 +2,7 @@
 #
 # Auto install Shadowsocks Server (all version)
 #
-# Copyright (C) 2016 Teddysun <i@teddysun.com>
+# Copyright (C) 2016 Gatoslu <lbcfez@gmail.com>
 #
 # System Required:  CentOS 6+, Debian7+, Ubuntu12+
 #
@@ -11,8 +11,8 @@
 # @breakwa11  <https://twitter.com/breakwa11>
 # @cyfdecyf   <https://twitter.com/cyfdecyf>
 # @madeye     <https://github.com/madeye>
-# 
-# Intro:  https://teddysun.com/486.html
+# @teddysun   <https://teddysun.com/486.html/teddysun>
+# Intro:  https://github.com/gatoslu/onestick-shadowsocks/
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -420,8 +420,8 @@ install_select() {
 
 install_prepare() {
     echo "Please enter password for ${software[${selected}-1]}"
-    read -p "(default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    read -p "(default password: gatoslu.xyz):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="gatoslu.xyz"
     echo
     echo "password = ${shadowsockspwd}"
     echo
@@ -492,7 +492,7 @@ install_shadowsocks_python() {
     else
         echo
         echo -e "${red}${software[0]}${plain} install failed."
-        echo "Please email to Teddysun <i@teddysun.com> and contact."
+        echo "Please email to gatolsu <gatoslu@gmail.com> and contact."
         install_cleanup
         exit 1
     fi
@@ -520,7 +520,7 @@ install_shadowsocks_r() {
     else
         echo
         echo -e "${red}${software[1]}${plain} install failed."
-        echo "Please email to Teddysun <i@teddysun.com> and contact."
+        echo "Please email to gatoslu <lbcfez@gmail.com> and contact."
         install_cleanup
         exit 1
     fi
@@ -561,7 +561,7 @@ install_shadowsocks_go() {
     else
         echo
         echo -e "${red}${software[2]}${plain} install failed."
-        echo "Please email to Teddysun <i@teddysun.com> and contact."
+        echo "Please email to gatoslu <lbcfez@gmail.com> and contact."
         install_cleanup
         exit 1
     fi
@@ -585,7 +585,7 @@ install_shadowsocks_libev() {
     else
         echo
         echo -e "${red}${software[3]}${plain} install failed."
-        echo "Please email to Teddysun <i@teddysun.com> and contact."
+        echo "Please email to gatoslu <lbcfez@gmail.com> and contact."
         install_cleanup
         exit 1
     fi
@@ -598,7 +598,7 @@ install_completed_python() {
     echo -e "Your Server IP        : ${red} $(get_ip) ${plain}"
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
-    echo -e "Your Encryption Method: ${red} aes-256-cfb ${plain}"
+    echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
 }
 
 install_completed_r() {
@@ -608,7 +608,7 @@ install_completed_r() {
     echo -e "Your Server IP        : ${red} $(get_ip) ${plain}"
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
-    echo -e "Your Encryption Method: ${red} aes-256-cfb ${plain}"
+    echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
     echo -e "Protocol              : ${red} origin ${plain}"
     echo -e "obfs                  : ${red} plain ${plain}"
     echo
@@ -623,7 +623,7 @@ install_completed_go() {
     echo -e "Your Server IP        : ${red} $(get_ip) ${plain}"
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
-    echo -e "Your Encryption Method: ${red} aes-256-cfb ${plain}"
+    echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
 }
 
 install_completed_libev() {
@@ -633,7 +633,7 @@ install_completed_libev() {
     echo -e "Your Server IP        : ${red} $(get_ip) ${plain}"
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
-    echo -e "Your Encryption Method: ${red} aes-256-cfb ${plain}"
+    echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
 }
 
 install_main(){
@@ -656,7 +656,7 @@ install_main(){
     fi
 
     echo
-    echo "Welcome to visit: https://teddysun.com/486.html"
+    echo "Welcome to visit: http://gatoslu.xyz"
     echo "Enjoy it!"
     echo
 }
