@@ -1,4 +1,4 @@
-# shadowsocks四合一安装版
+# shadowsocks四合一自用修改版
 
 #仅对默认配置进行了适当修改。
 
