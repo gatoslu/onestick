@@ -57,7 +57,7 @@ https://github.com/breakwa11/shadowsocks-csharp/releases
 
 使用root用户登录，运行以下命令：
 
-wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+wget --no-check-certificate https://raw.githubusercontent.com/gatoslu/onestick-shadowsocks/master/shadowsocks-all.sh
 
 chmod +x shadowsocks-all.sh
 
@@ -73,7 +73,7 @@ Your Server Port      :your_server_port
 
 Your Password         :your_password
 
-Your Encryption Method:aes-256-cfb
+Your Encryption Method:chacha20
 
 Welcome to visit:https://teddysun.com/486.html
 
