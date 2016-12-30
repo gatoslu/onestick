@@ -609,7 +609,7 @@ install_completed_r() {
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
     echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
-    echo -e "Protocol              : ${red} tls1.2_ticket_auth_compatible ${plain}"
+    echo -e "Protocol              : ${red} auth_sha1_v4_compatible ${plain}"
     echo -e "obfs                  : ${red} http_simple_compatible ${plain}"
     echo
     echo "If you want to change protocol & obfs, please visit reference URL:"
