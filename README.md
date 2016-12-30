@@ -3,9 +3,13 @@
 #仅对默认配置进行了适当修改。
 
 1,包括加密方式改为：chacha20
+
 2,设置默认时区设置为：东八区-上海
+
 3,修改shadowsocksR的协议修改为auth_sha1_v4_compatible 兼容原版shadowsocks
+
 4,修改shadowsocksR的混淆方式为http_simple_compatible  兼容原版shadowsocks
+
 #本脚本适用环境
 
 系统支持：CentOS 6+，Debian 7+，Ubuntu 12+
@@ -34,7 +38,7 @@
 
 服务器端口：自己设定（如不设定，默认为 8989）
 
-密码：自己设定（如不设定，默认为 teddysun.com）
+密码：自己设定（如不设定，默认为 gatoslu.xyz）
 
 备注：脚本默认创建单用户配置文件，如需配置多用户，请手动修改相应的配置文件后重启即可。
 
