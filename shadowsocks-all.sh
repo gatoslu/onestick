@@ -609,8 +609,8 @@ install_completed_r() {
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
     echo -e "Your Encryption Method: ${red} chacha20 ${plain}"
-    echo -e "Protocol              : ${red} origin ${plain}"
-    echo -e "obfs                  : ${red} plain ${plain}"
+    echo -e "Protocol              : ${red} tls1.2_ticket_auth_compatible ${plain}"
+    echo -e "obfs                  : ${red} http_simple_compatible ${plain}"
     echo
     echo "If you want to change protocol & obfs, please visit reference URL:"
     echo "https://github.com/breakwa11/shadowsocks-rss/wiki/Server-Setup"
@@ -656,11 +656,17 @@ install_main(){
     fi
 
     echo
-    echo "Welcome to visit: http://gatoslu.xyz"
+    echo "Welcome to visit: https://teddysun.com/358.html"
     echo "Enjoy it!"
     echo
 }
 
+#修改vps时间为上海时间
+function check_datetime(){
+    rm -rf /etc/localtime
+    ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    ntpdate time.windows.com
+    
 install_cleanup(){
     cd ${cur_dir}
     rm -rf ${libsodium_file} ${libsodium_file}.tar.gz
